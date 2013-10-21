@@ -18,6 +18,7 @@ let s:gui0C = "519f50"
 let s:gui0D = "6d9cbe"
 let s:gui0E = "b6b3eb"
 let s:gui0F = "bc9458"
+let s:guiDarkGrey = "4e4e4e"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -30,6 +31,7 @@ let s:cterm0B = "02"
 let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
+let s:ctermDrakGrey = "239"
 if exists('base16colorspace') && base16colorspace == "256"
   let s:cterm01 = "18"
   let s:cterm02 = "19"
@@ -148,7 +150,7 @@ call <sid>hi("VisualNOS",     s:gui08, "", s:cterm08, "", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "")
 call <sid>hi("WildMenu",      s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none")
-call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
+call <sid>hi("Conceal",       s:guiDarkGrey, s:gui00, s:ctermDrakGrey, s:cterm00, "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "")
 call <sid>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "")
